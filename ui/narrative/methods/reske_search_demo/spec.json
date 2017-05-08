@@ -1,0 +1,36 @@
+{
+    "ver": "0.0.1",
+    "authors": [
+        "rsutormin", "psnovichkov"
+    ],
+    "contact": "help@kbase.us",
+    "categories": ["active", "search", "demo"],
+    "app_type": "viewer",
+    "widgets": {
+        "input": null,
+        "output": "kbaseRESKESearchResultDemo"
+    },
+    "parameters": [ 
+        {
+            "id": "query",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [ "" ],
+            "field_type": "text",
+            "text_options": {
+                "valid_ws_types": [ ]
+            }
+        }
+    ],
+    "behavior": {
+        "none": {
+            "output_mapping": [
+                {
+                    "input_parameter": "query",
+                    "target_property": "query"
+                }
+            ]
+        }
+    }
+}
